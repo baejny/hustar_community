@@ -34,6 +34,7 @@ public class ScheduleServiceImpl implements ScheduleService{
 	
 	@Override
 	public int selectNewBoardCount() throws Exception{
+		System.out.println(boardMapper.selectNewBoardCount()+"@##########");
 		return boardMapper.selectNewBoardCount();
 	}
 	

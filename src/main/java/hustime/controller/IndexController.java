@@ -49,6 +49,7 @@ public class IndexController {
       int count_new_schedule = scheduleService.selectNewBoardCount();
       int count_new_notice = noticeService.selectNewBoardCount();
       int count_new_qna = qnaService.selectNewBoardCount();
+      System.out.println(count_new_schedule+" @@@@@@@@@@@@@@@@@@@@");
       List<ScheduleDto> list_schedule = scheduleService.selectTopFiveBoardList();
       List<NoticeDto> list_notice = noticeService.selectTopFiveBoardList();
       List<FreeDto> list_free = freeService.selectTopFiveBoardList();
